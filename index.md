@@ -16,12 +16,14 @@ We are a company started up my 5 NYP students who are every interested in phones
 
 <br>
 ### Products/Services we offer: 
-- Able to purchase product on this website
-- Feedback form in the “Support” page
-- Specification of Product
-- Promote Samsung phones
-- Social Media linking
-- At the bottom of the page, you can ask any queries you may have
+<ol>
+  <li>Able to purchase product on this website</li>
+  <li>Feedback form in the “Support” page</li>
+  <li>Specification of Product</li>
+  <li>Promote Samsung phones</li>
+  <li>Social Media linking</li>
+  <li>At the bottom of the page, you can ask any queries you may have</li>
+</ol>
 
 <br>
 ### Task Allocation:
