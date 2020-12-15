@@ -32,3 +32,5 @@ We are a company started up my 5 NYP students who are every interested in phones
 - Daryl - Support page and overall website layout
 - Jaron - Online store
 - Jonathan - 1 product infomation page
+
+<br>
