@@ -1,0 +1,232 @@
+<html>
+	<head>
+		<title>
+			Online Store: Galaxy S9 and S9+
+		</title>
+		<link href="style.css" rel="stylesheet"/>
+		<style>
+			.heading {
+			font-family: Trebuchet MS, Helvetica, sans-serif;
+			padding: 14px 16px;
+			color:white;
+			}
+		.content {
+			font-family: Trebuchet MS, Helvetica, sans-serif;
+			}
+		.particulars {
+			background-color:white;
+			}
+		.secondnavbar {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #252424;
+			position: sticky;
+			top: 0;
+			width:100%;
+			font-size: 15px;
+			}
+
+		.secondnavbarcontent {
+			float: left;
+			}
+
+			.secondnavbarcontent a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			}
+
+			.secondnavbarcontent a:hover:not(.active) {
+			background-color: #111;
+			}
+			.active {
+				background-color: #1E90FF;
+			}
+		</style>
+	</head>
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+	
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+		if (!e.target.matches('.dropbtn')) {
+		var myDropdown = document.getElementById("myDropdown");
+			if (myDropdown.classList.contains('show')) {
+			myDropdown.classList.remove('show');
+			}
+		}
+		}
+		function changeImage(imgName)
+		{
+		image = document.getElementById('theimage');
+		image.src = imgName;
+		}
+	</script>
+	<body>
+		<div class="mainnavbar">
+			<a href="homepage.html" class="logo"><img src="images/logo.png" width="150"/></a>
+			<div class="mainnavbarcontent">
+				<a href="homepage.html" style="text-decoration: none" id="mainmenu">HOME</a>
+				<div class="dropdown">
+					<button class="dropbtn" onmouseover="myFunction()">PRODUCTS
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="samsungnote9.html">Samsung GALAXY Note 9</a>
+						<a href="samsungs9.html">Samsung GALAXY S9/S9+</a>
+						<a href="samsunga9.html">Samsung GALAXY A9</a>
+					</div>
+				</div>
+				<a href="S9Store.html" style="text-decoration: none" id="mainmenu" class="active">ONLINE STORE</a>
+				<a href="supportsamsungconcierge.html" style="text-decoration: none" id="mainmenu">CONCIERGE</a>
+				<a href="supportcontactus.html" style="text-decoration: none" id="mainmenu">CONTACT US</a>
+			</div>
+		</div>
+	<!--Content Here-->
+	<div class="content" style="background-color:black;">
+	<ul class="secondnavbar">
+			<li class="secondnavbarcontent" style="color:white; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 20"> Online Store </a></li>
+			<br/><br/><br/>
+
+			<li class="secondnavbarcontent"><a href="S9Store.html"> GALAXY S9|S9+ </a></li>
+			<li class="secondnavbarcontent"><a href="Note9Store.html"> GALAXY NOTE 9 </a></li>
+			<li class="secondnavbarcontent"><a href="A9Store.html" class="active"> GALAXY A9 </a></li>
+		</ul>
+		<h1 class="heading">Galaxy A9 </h1>
+		<form action="checkout.php" method="get">
+		<img src="images/samsungstore/a9blue.png" width="500" height="500"
+		alt="Samsung S9" align="left" style="float: left; margin-right: 10px; margin-bottom: 5px;" id="theimage"/>
+		<table class="particulars" border="0" cellpadding="5" style="background-color:black; color:white;">
+			<tr>
+				<td><label>Color:</label></td>
+				<td>
+				<label style="color:#3090C7; font-weight:bold;"><input type="radio" name="color" value="Black" checked="checked" onClick="changeImage('images/samsungstore/a9blue.png');" required display>Lemonade Blue</label>
+				<label style="color:#696969; font-weight:bold;"><input type="radio" name="color" value="Purple" onClick="changeImage('images/samsungstore/a9black.png');" required>Caviar Black</label>
+				<label style="color:#F778A1; font-weight:bold;"><input type="radio" name="color" value="Gray" onClick="changeImage('images/samsungstore/a9pink.png');" required>Bubblegum Pink</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Storage Space:</label></td>
+				<td>
+				<label><input type="radio" name="storage" value="64GB" checked="checked" required>64GB</label>
+				<label><input type="radio" name="storage" value="128GB" required>128GB</label>
+				<label><input type="radio" name="storage" value="512GB" required>512GB</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="myName">First Name:</label></td>
+				<td><input type="text" name="myName" id="myName" required placeholder="Eg.John Smith" style="border-radius: 8px;"></td>
+			</tr>
+			<tr>
+				<td><label for="myEmail">E-mail:</label></td>
+				<td><input type="email" name="myEmail" id="myEmail" required placeholder="john@abc.com" style="border-radius: 8px;"></td>
+			</tr>
+			<tr>
+				<td><label for="myNumber">Phone Number:</label></td>
+				<td><input type="text" name="myNumber" id="myNumber" maxlength="8" required placeholder="eg.91234567" style="border-radius: 8px;"></td>
+			</tr>
+			<tr>
+				<td rowspan="2"><label for="myAddress">Billing Address:</label></td>
+				<td><input type="text" name="myAddress" id="myAddress" required placeholder="Address Line 1" style="border-radius: 8px;"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="myAddress" id="myAddress" placeholder="Address Line 2 (optional)" style="border-radius: 8px;"></td>
+			</tr>
+			<tr><td><hr></td><td><hr></td></tr>
+			<tr>
+				<td>Only Visa/Mastercard is accepted</td>
+			<tr><td><hr></td><td><hr></td></tr>
+			</tr>
+			<tr>
+				<td><label for="cardNumber">Card number:</label>
+				<td><input type="text" pattern=".{0}|.{16,16}" title="Card Number" maxlength="16" placeholder="1111-2222-3333-4444" name="cardNumber" id="cardNumber" style="border-radius: 8px;" required></td>
+			</tr>
+			<tr>
+				<td rowspan="2">Expiry date:</td>
+				<td>Month:
+				<select id="expiryDate">
+				<option value="1">01</option>
+				<option value="2">02</option>
+				<option value="3">03</option>
+				<option value="4">04</option>
+				<option value="5">05</option>
+				<option value="6">06</option>
+				<option value="7">07</option>
+				<option value="8">08</option>
+				<option value="9">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</tr>
+			<tr>
+				<td>Year:
+				<select id="expiryDate">
+				<option value="1">19</option>
+				<option value="2">20</option>
+				<option value="3">21</option>
+				<option value="4">22</option>
+				<option value="5">23</option>
+				<option value="6">24</option>
+				<option value="7">25</option>
+				<option value="8">26</option>
+				<option value="9">27</option>
+				<option value="10">28</option>
+				<option value="11">29</option>
+				<option value="12">30</option>
+				<option value="13">31</option>
+				<option value="14">32</option>
+				<option value="15">33</option>
+				<option value="16">34</option>
+				<option value="17">35</option>
+				<option value="18">36</option>
+				<option value="19">37</option>
+				<option value="20">38</option>
+				<option value="21">39</option>
+				<option value="22">40</option>
+				<option value="23">41</option>
+				<option value="24">42</option></td>
+			</tr>
+			<tr>
+				<td><label for="secCode">Security Code:</label></td>
+				<td><input type="text" pattern=".{0}|.{3,3}" name="secCode" id="secCode" maxlength="3" required style="border-radius: 8px;"></td>
+			</tr>
+			<tr><td><hr></td><td><hr></td></tr>
+			<tr>
+				<td> </td>
+				<td><input type="submit" value="Checkout" style="border-radius: 8px; border:0; background:#1E90FF; color:#eee; line-height:27px; height:30px; font-family: sans-serif;"/>
+				<button type="reset" value="reset" style="border-radius: 8px; border:0; background:#1E90FF; color:#eee; line-height:27px; height:30px;">Reset</button></td>
+			</tr>
+		</table>
+		</form>
+		<hr/>
+		<h1> Check out our other products </h1>
+		<hr/>
+		<h1> <a href="samsungs9.html" style="color:white; text-decoration:none;">Galaxy S9|S9+ </h1>
+		<img src="images/samsungstore/s9image.jpg" alt="camera" style="width:100%;">
+		<hr/>
+		</br>
+		<h1> <a href="samsungnote9.html" style="color:white; text-decoration:none;">Galaxy Note 9 </h1>
+		<img src="images/samsungstore/home.jpg" alt="camera" style="width:100%;">
+	</div>
+	<!--Content Here-->
+	<div class="footer">
+			<p id="copyright">Copyright &#169; 2019 SNA All rights reserved.</p>
+			<p id="followus">Follow us at:
+					<a href=""><img src="images/facebook.png" height="25" width="25"/></a>						
+					<a href=""><img src="images/instagram.png" height="25" width="25"/></a>
+					<a href=""><img src="images/youtube.png" height="25" width="25"/></a>
+					<a href=""><img src="images/twitter.png" height="25" width="25"/></a>
+			</p>
+		</div>
+		<div id="widget">
+			<a href="FAQ.html" target="_blank"><img src="images/Question.png" height="50"/></a>
+		</div>
+	</body>
+</html>		

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Samsung</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<script src="jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+		<style>
+		* {
+			box-sizing: border-box;
+		}
+		body{
+			color:white;
+		}
+		.container{
+			margin-top:50px;
+		}
+		p.Note9 {
+			text-align: center;
+			font-size: 50px;
+		}
+
+		div.1 {
+			width: 100%;
+			color: white;
+		}
+		.phone {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 150px;
+		}
+
+		.phones {
+			background-size: contain;
+		}
+
+		.tabledata {
+		width: 50%;
+		}
+
+		.button {
+			width: 100%;
+			height: 150px;
+			text-align: center;
+		}
+
+		.moreInfo {
+			width: 160px;
+			height: 60px;
+			border-radius: 25px;
+			border: 2px solid white;
+			background-color: black;
+			color: white;
+			font-size: 15px;
+		}
+
+		.moreInfo2 {
+			width: 100px;
+			height: 40px;
+			border-radius: 25px;
+			border: 2px solid white;
+			background-color: black;
+			color: white;
+			font-size: 10px;
+		}
+
+		.logo1 {
+			text-align: center;
+			width: 100%;
+		}
+		.end{
+			margin-bottom:50px;
+		}
+		/*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 051 css*/
+        .jssorb051 .i {position:absolute;cursor:pointer;}
+        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb051 .i:hover .b {fill-opacity:.7;}
+        .jssorb051 .iav .b {fill-opacity: 1;}
+        .jssorb051 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+		</style>
+		<script type="text/javascript">
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+		if (!e.target.matches('.dropbtn')) {
+		var myDropdown = document.getElementById("myDropdown");
+			if (myDropdown.classList.contains('show')) {
+			myDropdown.classList.remove('show');
+			}
+		}
+		}
+		jssor_1_slider_init = function() {
+
+				var jssor_1_SlideshowTransitions = [
+				  {$Duration:800,$Opacity:2}
+				];
+
+				var jssor_1_options = {
+				  $AutoPlay: 1,
+				  $SlideshowOptions: {
+					$Class: $JssorSlideshowRunner$,
+					$Transitions: jssor_1_SlideshowTransitions,
+					$TransitionsOrder: 1
+				  },
+				  $ArrowNavigatorOptions: {
+					$Class: $JssorArrowNavigator$
+				  },
+				  $BulletNavigatorOptions: {
+					$Class: $JssorBulletNavigator$
+				  }
+				};
+
+				var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+				/*#region responsive code begin*/
+
+				var MAX_WIDTH = 980;
+
+				function ScaleSlider() {
+					var containerElement = jssor_1_slider.$Elmt.parentNode;
+					var containerWidth = containerElement.clientWidth;
+
+					if (containerWidth) {
+
+						var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+						jssor_1_slider.$ScaleWidth(expectedWidth);
+					}
+					else {
+						window.setTimeout(ScaleSlider, 30);
+					}
+				}
+
+				ScaleSlider();
+
+				$Jssor$.$AddEvent(window, "load", ScaleSlider);
+				$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+				$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+				/*#endregion responsive code end*/
+			};
+	</script>
+	</head>
+	<body style="padding:0px; margin:0px;">
+		<div class="mainnavbar">
+			<a href="homepage.html" class="logo"><img src="images/logo.png" width="150"/></a>
+			<div class="mainnavbarcontent">
+				<a href="homepage.html" style="text-decoration: none" id="mainmenu" class="active">HOME</a>
+				<div class="dropdown">
+					<button class="dropbtn" onmouseover="myFunction()">PRODUCTS
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="samsungnote9.html">Samsung GALAXY Note 9</a>
+						<a href="samsungs9.html">Samsung GALAXY S9/S9+</a>
+						<a href="samsunga9.html">Samsung GALAXY A9</a>
+					</div>
+				</div>
+				<a href="S9Store.html" style="text-decoration: none" id="mainmenu">ONLINE STORE</a>
+				<a href="supportsamsungconcierge.html" style="text-decoration: none" id="mainmenu">CONCIERGE</a>
+				<a href="supportcontactus.html" style="text-decoration: none" id="mainmenu">CONTACT US</a>
+			</div>
+		</div>
+		 <div id="jssor_1" style="position:relative;margin:0 auto;top:100px;left:0px;width:1280px;height:720px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1280px;height:720px;overflow:hidden;">
+            <div>
+                <a href="samsungs9.html"><img data-u="image" src="images/homepage/S9.png" /></a>
+            </div>
+            <div>
+                <a href="samsungnote9.html"><img data-u="image" src="http://thetechnews.com/wp-content/uploads/2018/06/maxresdefault.jpg" /></a>
+            </div>
+            <div>
+                <a href="samsunga9.html"><img data-u="image" src="images/homepage/A9.png" /></a>
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+		</div>
+	    <script type="text/javascript">jssor_1_slider_init();</script>
+		<img class="phone" src="https://image.samsung.com/sg/smartphones/galaxy-note9/images/galaxy-note9_overview_kv_type1.png"/>
+		<p class="Note9"><span>Samsung Galaxy Note 9</span><br><span>The all-new powerful Note</span></p>
+		<div class="button">
+			<a href="samsungnote9.html"><input type="button" value="More Info" class="moreInfo"></a>
+		</div>
+		<div class="logo1">
+			<img style="width: 400px; height: auto;" src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Flogok.org%2Fwp-content%2Fuploads%2F2014%2F07%2FSamsung-logo-2015-Nobg-1024x768.png&f=1">
+		</div>
+		<div class="1">
+			<table class="end" style="width:100%;" border="0">
+				<tr>
+					<td class="tabledata">
+						<img class="phones" style="float:right;" src="https://image.samsung.com/sg/smartphones/galaxy-s9/shop/buyingtool/product/product_galaxys9_lilacpurple_01.png">
+					</td>
+					<td class="tabledata">
+						<span><p style="float: left; font-size: 50px;">Samsung S9|S9+</p></span>
+						<br/>
+						<span><p style="float: left; font-size: 25px">The revolutionary camera that adapts like the human eye.<p></span>
+						<br><br/><br/><br><br><br><br><br><br><br><br/><br/><br><br>
+						<a href="samsungs9.html"><button style="float: left;" type="submit" class="moreInfo2">More Info</button></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="tabledata">
+						<p style="float: right; font-size: 50px;">Samsung Galaxy Note 9</p>
+						<br><br/><br/><br><br><br><br><br><br>
+						<p style="float: right; font-size: 25px">The all-new powerful Note</p>
+					<br/><br/><br/><br><br>
+						<a href="samsungnote9.html"><button style="float: right;" type="submit" class="moreInfo2">More Info</button></a>
+					</td>
+					<td class="tabledata">
+						<img class="phones" src="https://images.samsung.com/is/image/samsung/p5/sg/mobile/pcd-galaxy-note9_white.png?$ORIGIN_PNG$">
+					</td>
+				</tr>
+				<tr>
+					<td class="tabledata">
+						<img class="phones" src="images/homepage/Samsung A7.png">
+					</td>
+					<td class="tabledata">
+						<span><p style="float: left; font-size: 50px">Samsung A9</p></span>
+						<br/><br/><br><br><br><br><br><br><br>
+						<span><p style="float: left; font-size: 25px">The world's first quad camera smartphone.</p></span>
+						<br/><br/><br><br><br><br/>
+						<a href="samsunga9.html"><button style="float: left;" type="submit" class="moreInfo2">More Info</button></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--Content here-->
+		<div class="footer">
+			<table id="followus">
+				<caption>Follow us</caption>
+				<tr>
+					<td><a href=""><img src="images/facebook.png" height="25" width="25"/></a></td>						
+					<td><a href=""><img src="images/instagram.png" height="25" width="25"/></a></td>
+					<td><a href=""><img src="images/youtube.png" height="25" width="25"/></a><td>
+					<td><a href=""><img src="images/twitter.png" height="25" width="25"/></a></td>
+				</tr>
+			</table>
+			<p id="copyright">&nbsp;&nbsp;Copyright &#169; 2019 SNA All rights reserved.</p>
+		</div>
+		<div id="widget">
+			<a href="FAQ.html"><img src="images/Question.png" height="50"/></a>
+		</div>
+	</body>
+</html>

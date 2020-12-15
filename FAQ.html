@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Samsung - FAQ</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet" />
+		<style>
+		body{
+		color:white;
+		}
+		.content{
+		text-align:left;
+		}
+		.coverphoto{
+		float:left;
+		width:25%;
+		}
+		h3{
+		font-family:"Trebuchet MS", Helvetica, sans-serif;
+		}
+		.footer{
+		float:left;
+		}
+		</style>
+		<script type="text/javascript">
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+	
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+		if (!e.target.matches('.dropbtn')) {
+		var myDropdown = document.getElementById("myDropdown");
+			if (myDropdown.classList.contains('show')) {
+			myDropdown.classList.remove('show');
+			}
+		}
+		}
+	</script>
+	</head>
+	<body>
+		<div class="mainnavbar">
+			<a href="homepage.html" class="logo"><img src="images/logo.png" width="150"/></a>
+			<div class="mainnavbarcontent">
+				<a href="homepage.html" style="text-decoration: none" id="mainmenu">HOME</a>
+				<div class="dropdown">
+					<button class="dropbtn" onmouseover="myFunction()">PRODUCTS
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="samsungnote9.html">Samsung GALAXY Note 9</a>
+						<a href="samsungs9.html">Samsung GALAXY S9/S9+</a>
+						<a href="samsunga9.html">Samsung GALAXY A9</a>
+					</div>
+				</div>
+				<a href="S9Store.html" style="text-decoration: none" id="mainmenu">ONLINE STORE</a>
+				<a href="supportsamsungconcierge.html" style="text-decoration: none" id="mainmenu">CONCIERGE</a>
+				<a href="supportcontactus.html" style="text-decoration: none" id="mainmenu">CONTACT US</a>
+			</div>
+		</div>
+		<!--Content here-->
+		<div class="content">
+		<img src="Images/FAQ/samsungphones.jpg" class="coverphoto"/>
+		<br/>
+		<br/>
+		<h1>Frequently Asked Questions</h1>
+		<h2>1. What operating system does Samsung GALAXY phones use?</h2>
+		<h3>Samsung GALAXY phones uses the <a href="https://www.android.com/" target="_blank">Android</a> operating system.</h3>
+		<h2>2. What are Samsung GALAXY phones made of?</h2>
+		<h3>Samsung GALAXY phones use Corning Gorilla Glass 5 OLED screens and a stainless steel metal frame for durability.</h3>
+		<h2>3. Are Samsung GALAXY phones safe to be used?</h2>
+		<h3>After the Samsung GALAXY Note 7 incident, our phones have gone through vigorous tests to ensure safety and quality to all our users.</h3>
+		<br/>
+		<br/>
+		<h2>Have any other questions? <a href="supportcontactus.html">Contact Us</a></h2>
+		</div>
+		<!--Content here-->
+		<div class="footer">
+			<p id="copyright">Copyright &#169; 2019 SNA All rights reserved.</p>
+			<p id="followus">Follow us at:
+					<a href=""><img src="images/facebook.png" height="25" width="25"/></a>						
+					<a href=""><img src="images/instagram.png" height="25" width="25"/></a>
+					<a href=""><img src="images/youtube.png" height="25" width="25"/></a>
+					<a href=""><img src="images/twitter.png" height="25" width="25"/></a>
+			</p>
+		</div>
+		<div id="widget">
+			<a href="FAQ.html" target="_blank"><img src="images/Question.png" height="50"/></a>
+		</div>
+	</body>
+</html>
