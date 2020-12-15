@@ -1,5 +1,5 @@
-# Introduction:
----
+## Introduction:
+
 
 ### Members:
 - Daryl
