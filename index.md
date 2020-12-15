@@ -1,6 +1,7 @@
 # Introduction:
-## <br>
+---
 
+<br>
 ### Members:
 - Daryl
 - Jonathan
